@@ -11,7 +11,7 @@ function App() {
 
   const getRecommendations = async () => {
     try {
-      const response = await axios.get('http://127.0.0.1:5000/recommend', {
+      const response = await axios.get('https://movie-recommendation-system-m1q9.onrender.com/recommend', {
         params: {
           user_id: userId,
           movie_title: movieTitle,
